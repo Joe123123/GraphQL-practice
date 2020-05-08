@@ -5,12 +5,14 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-mongoose.connect(
-  "mongodb+srv://dbUser:pw1234@gql-practice-dn1q9.mongodb.net/test"
-);
-mongoose.connection.once("open", () => {
-  console.log("db connected");
-});
+mongoose
+  .connect("mongodb+srv://dbUser:pw1234@gql-practice-dn1q9.mongodb.net/test", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("connected to database");
+  });
 
 app.use(
   "/graphql",
