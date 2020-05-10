@@ -4,7 +4,7 @@ Reading List is a practice project for GraphQL with React that allows you to vie
 
 ## Screenshots
 
-!["Page"]("https://github.com/Joe123123/GraphQL-practice/blob/master/client/public/images/page.png")
+!["Page"](https://github.com/Joe123123/GraphQL-practice/blob/master/client/public/images/page.png)
 
 ## Setup
 
