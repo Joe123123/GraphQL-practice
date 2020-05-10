@@ -6,7 +6,7 @@ import { useMutation, useQuery } from "@apollo/react-hooks";
 import {
   getAuthorsQuery,
   addBookMutation,
-  getBookQuery,
+  getBooksQuery,
 } from "../queries/queries";
 
 class AddBook extends Component {
@@ -32,7 +32,7 @@ class AddBook extends Component {
     e.preventDefault();
     this.props.addBookMutation({
       variables: { ...this.state },
-      refetchQueries: [{ query: getBookQuery }],
+      refetchQueries: [{ query: getBooksQuery }],
     });
   }
 
